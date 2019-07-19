@@ -1,140 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
 
-    <link rel="stylesheet" href="./assets/css/reset.css">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color:red;
-}
-
-
-.container {
-  border-radius: 10px;
-  background-color: gray;
-  padding: 10px;
-}
-
-
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color:red;
-}
-
-
-
-</style>
 </head>
+
 <body>
 
-    <ul>
-        <li><a href="#home">Thelina George</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a class="active" href="#contact">Contact</a></li>
-      </ul>
+  <ul>
+      <li><a href="./index.html">Thelina George</a></li>
+      <li><a href="./index.html">About</a></li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a class="active" href="./contact.html">Contact</a></li>
+  </ul>
 
-<div class="container">
+  <div class="container">
 
-  <div class="row">
-    <div class="column">
-      <img src="./assets/images/DSC01085.jpg" style="width:50%">
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
+    <div class="row">
+      <div class="column">
+        <img src="./assets/images/DSC01085.jpg" style="width:50%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
 </body>
+
 </html>
