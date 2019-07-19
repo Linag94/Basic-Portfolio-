@@ -48,13 +48,19 @@ li a:hover:not(.active) {
     
   }
   #thelina-main-img {
+    margin-top: 20px;
     width: 340px;
     float: left;
+    border: solid;
+    border-color: red;
+    
   }
 
   .right-float {
       float: right;
       width: 40%;
+      margin-top: 20px;
+    
   }
 
   .clearfix::after {
@@ -91,10 +97,11 @@ li a:hover:not(.active) {
     width: 40%;
     margin-top: 6px;
     padding: 20px;
+    margin-top: 70px;
+    margin-right: 100px;
   }
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
